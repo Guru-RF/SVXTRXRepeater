@@ -38,7 +38,7 @@ cd ..
 say "Disabling HDMI audio"
 run "perl -i -pe 's/^dtoverlay=vc4-kms-v3d$/dtoverlay=vc4-kms-v3d,noaudio/g' /boot/config.txt"
 say "Disabling Internal audio"
-run "grep -q 'dtparam=audio=on' /boot/config.txt || echo 'dtparam=audio=off' >> /boot/config.txt"
+run "perl -i -pe 's/^dtparam=audio=on$/dtparam=audio=off/g' /boot/config.txt"
 say "Disabling Bluetooth"
 run "grep -q 'dtoverlay=disable-bt' /boot/config.txt || echo 'dtoverlay=disable-bt' >> /boot/config.txt"
 run "sudo systemctl disable hciuart.service"
