@@ -1,4 +1,8 @@
-# SVXRepeater ([RF.Guru SVXRepeater](https://rf.guru/2023-k-041))
+# SVXRepeater ([RF.Guru TRXRepeater](https://rf.guru/2023-k-300))
+
+The board has an audio card.
+Audio bypass (default)
+PTT bypass (optional)
 
 Prepare your sd-card with Raspberry PI OS Lite ! ([Youtube](https://www.youtube.com/watch?v=vxmO_a5WNI8))
 
