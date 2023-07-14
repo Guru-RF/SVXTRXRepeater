@@ -2,4 +2,4 @@
 
 # disable AUDIO bypass
 /usr/bin/raspi-gpio set 7 op
-/usr/bin/raspi-gpio set 7 dl
+/usr/bin/raspi-gpio set 7 dh
