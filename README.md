@@ -11,7 +11,7 @@ sudo apt -y install git
 
 ### Clone repostory ###
 ```console
-git clone https://github.com/Guru-RF/SVXRepeater.git
+git clone https://github.com/Guru-RF/SVXTRXRepeater.git
 ```
 
 ### Audio and Radio module installation script ###
