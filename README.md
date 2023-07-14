@@ -17,7 +17,7 @@ git clone https://github.com/Guru-RF/SVXTRXRepeater.git
 ### Audio and Radio module installation script ###
 ```console
 cd SVXRepeater
-sudo bash install-radiomodule.sh
+sudo bash install-trxrptr.sh 
 ```
 
 ### SVXLink installation script ###
