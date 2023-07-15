@@ -66,7 +66,7 @@ run "cp svxlink.service /lib/systemd/system/svxlink.service"
 
 say "Installing default configurations"
 run "cat gpio.conf > /etc/svxlink/gpio.conf"
-run "cat svxlink.conf > /etc/svxlink/svxlink.conf"
+run "cat svxlink.conf > /etc/svxlink/svxlink.conf.new"
 run "cat svxlink_gpio_up > /usr/sbin/svxlink_gpio_up"
 
 say "Installing systemd services"
@@ -81,7 +81,8 @@ run "/usr/sbin/hotspot"
 say "Edit & rerun /usr/sbin/hotspot to change frequencies/ctcss etc .."
 say "You only need to run this once as the module has eeprom !"
 
-say "Svxlink config is in here: /etc/svxlink/svxlink.conf"
+say "Svxlink config is in here: /etc/svxlink/svxlink.conf.new" 
+say "Copy it to /etc/svxlink/svxlink.conf if this is a blank install !"
 
 say "By default you can send dtmf tones D1# to the hotspot to activate te parrot"
 
