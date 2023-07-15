@@ -1,9 +1,16 @@
-# SVXRepeater ([RF.Guru TRXRepeater](https://rf.guru/2023-k-300))
+# SVXLink install for the RF.Guru TRXrptr repeater HAT ([RF.Guru TRXrptr](https://rf.guru/2023-k-300))
 
-The board has an audio card.
-Audio bypass (default)
-PTT bypass (optional)
+HAT has been tested on a Raspberry Pi ZeroW and a Raspberry PI 4, should work on others to!
 
+The board has an audio card, an audio and ptt bypass (default)
+
+PTT is end via small relay (NC and NO contacts are both available)
+
+PTT bypass is doen via relay (NC and NO contacts arre both available)
+
+COS detection from 3v till 24v via GPIO 12
+
+PTT send is via GPIO 16
 Prepare your sd-card with Raspberry PI OS Lite ! ([Youtube](https://www.youtube.com/watch?v=vxmO_a5WNI8))
 
 Login to your system with ssh add run following commands:
