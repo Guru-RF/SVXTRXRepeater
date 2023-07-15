@@ -1,4 +1,4 @@
-# SVXLink install for the RF.Guru TRXrptr repeater HAT ([RF.Guru TRXrptr](https://rf.guru/2023-k-300))
+# SVXLink install for the RF.Guru TRXrptr HAT ([RF.Guru TRXrptr](https://rf.guru/2023-k-300))
 
 HAT has been tested on a Raspberry Pi ZeroW and a Raspberry PI 4, should work on others to!
 
