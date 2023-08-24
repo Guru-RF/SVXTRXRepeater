@@ -29,7 +29,7 @@ sudo bash install-trxrptr.sh
 
 ### SVXLink installation script ###
 ```console
-cd SVXRepeater
+cd SVXTRXRepeater
 sudo bash install-svxlink.sh
 ```
 
