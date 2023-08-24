@@ -2,11 +2,10 @@
 
 HAT has been tested on a Raspberry Pi ZeroW and a Raspberry PI 4, should work on others to!
 
-The board has an audio card, an audio and ptt bypass (default)<br>
-PTT is end via small relay (NC and NO contacts are both available)<br>
-PTT bypass is doen via relay (NC and NO contacts arre both available)<br>
-COS detection from 3v till 24v via GPIO 12<br>
-PTT send is via GPIO 16<br>
+The board has an audio card, an audio and ptt (optional) bypass<br>
+PTT is done via a tiny relay (NC and NO contacts are both available)<br>
+PTT bypass is also presented via a small relay relay (NC and NO contacts are both available)<br>
+COS detection is optional from 3v till 24v<br>
 
 Prepare your sd-card with Raspberry PI OS Lite ! ([Youtube](https://www.youtube.com/watch?v=vxmO_a5WNI8))
 
@@ -37,5 +36,19 @@ sudo bash install-svxlink.sh
 ### Simple Test ###
 Sending D1# dtmf on the configured frequency starts the parrot.
 
-### SVXLink Hotspot in action ###
-https://github.com/Guru-RF/SVXSpot/assets/1251767/50dd4366-8439-4067-83b5-5866d0adca77
+
+### GPIO Pins
+Description of the GPIO pins
+```text
+GPIO 7 -> output ... Drive High for disabling the audio bypass (audio is in bypass by default)
+GPIO 8 -> output ... Optional PTT bypss (see breakout)
+GPIO 16 -> output ... Drive PTT (for any type of PTT (relay)
+GPIO 12 -> input ... COS ... depending on your tranceiver ... logic voltage can be between 3.3v and 24v
+```
+
+### Picture's ###
+
+ON0AND<br>![ON0AND](https://github.com/Guru-RF/SVXTRXRepeater/assets/1251767/ae8500d2-dcf4-4cf3-8188-8b11269a3f90)<br>
+ON0HAL<br>![ON0HAL](https://github.com/Guru-RF/SVXTRXRepeater/assets/1251767/7f9c5074-71b5-40aa-8375-b926f5b23b90)<br>
+ON0ORA<br>![ON0ORA](https://github.com/Guru-RF/SVXTRXRepeater/assets/1251767/10086ad7-3edd-46fc-9fe0-11c2d8879e82)<br>
+
