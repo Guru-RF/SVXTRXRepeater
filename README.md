@@ -2,11 +2,10 @@
 
 HAT has been tested on a Raspberry Pi ZeroW and a Raspberry PI 4, should work on others to!
 
-The board has an audio card, an audio and ptt bypass (default)<br>
-PTT is end via small relay (NC and NO contacts are both available)<br>
-PTT bypass is doen via relay (NC and NO contacts arre both available)<br>
-COS detection from 3v till 24v via GPIO 12<br>
-PTT send is via GPIO 16<br>
+The board has an audio card, an audio and ptt (optional) bypass<br>
+PTT is done via a tiny relay (NC and NO contacts are both available)<br>
+PTT bypass is also presented via a small relay relay (NC and NO contacts are both available)<br>
+COS detection is optional from 3v till 24v<br>
 
 Prepare your sd-card with Raspberry PI OS Lite ! ([Youtube](https://www.youtube.com/watch?v=vxmO_a5WNI8))
 
@@ -46,8 +45,6 @@ GPIO 8 -> output ... Optional PTT bypss (see breakout)
 GPIO 16 -> output ... Drive PTT (for any type of PTT (relay)
 GPIO 12 -> input ... COS ... depending on your tranceiver ... logic voltage can be between 3.3v and 24v
 ```
-
-
 
 ### Picture's ###
 
