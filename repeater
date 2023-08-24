@@ -6,5 +6,5 @@
 
 # disable PTT bypass
 /usr/bin/raspi-gpio set 8 op
-/usr/bin/raspi-gpio set 8 dl
+/usr/bin/raspi-gpio set 8 dh
 
