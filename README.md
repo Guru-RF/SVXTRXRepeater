@@ -46,6 +46,11 @@ GPIO 16 -> output ... Drive PTT (for any type of PTT (relay)
 GPIO 12 -> input ... COS ... depending on your tranceiver ... logic voltage can be between 3.3v and 24v
 ```
 
+### New version !!! With Breackout board !!!
+<img width="1314" alt="breakout" src="https://github.com/Guru-RF/SVXTRXRepeater/assets/1251767/d1f3eb9a-1e93-4c4b-ad63-5a8272c8aabe">
+<img width="1003" alt="rptr" src="https://github.com/Guru-RF/SVXTRXRepeater/assets/1251767/44d77236-37a6-4434-bb7b-9ed9dd46c923">
+
+
 ### Picture's ###
 
 ON0AND<br>![ON0AND](https://github.com/Guru-RF/SVXTRXRepeater/assets/1251767/ae8500d2-dcf4-4cf3-8188-8b11269a3f90)<br>
