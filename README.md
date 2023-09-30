@@ -46,6 +46,13 @@ GPIO 16 -> output ... Drive PTT (for any type of PTT (relay)
 GPIO 12 -> input ... COS ... depending on your tranceiver ... logic voltage can be between 3.3v and 24v
 ```
 
+### AUDIO Pins
+Description of the GPIO pins
+```text
+RMIC -> TX audio (Audio from the board to the repeater)
+RAF -> RX audio (Audio from the repeater to the board)
+```
+
 ### New version !!! With Breackout board !!!
 Main PCB<br>
 ![2023-P-300](https://github.com/Guru-RF/SVXTRXRepeater/assets/1251767/348cf2b0-6107-4a90-9719-5b729cbd78da)<br>
