@@ -47,8 +47,10 @@ GPIO 12 -> input ... COS ... depending on your tranceiver ... logic voltage can 
 ```
 
 ### New version !!! With Breackout board !!!
-![2023-P-300](https://github.com/Guru-RF/SVXTRXRepeater/assets/1251767/348cf2b0-6107-4a90-9719-5b729cbd78da)
-![2023-P-701](https://github.com/Guru-RF/SVXTRXRepeater/assets/1251767/f0934b06-4ec9-4cef-84e8-26a5313f08b8)
+Main PCB<br>
+![2023-P-300](https://github.com/Guru-RF/SVXTRXRepeater/assets/1251767/348cf2b0-6107-4a90-9719-5b729cbd78da)<br>
+Breakout PCB<br>
+![2023-P-701](https://github.com/Guru-RF/SVXTRXRepeater/assets/1251767/f0934b06-4ec9-4cef-84e8-26a5313f08b8)<br>
 
 ### Picture's ###
 
