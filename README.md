@@ -72,4 +72,5 @@ Breakout PCB<br>
 ON0AND<br>![ON0AND](https://github.com/Guru-RF/SVXTRXRepeater/assets/1251767/ae8500d2-dcf4-4cf3-8188-8b11269a3f90)<br>
 ON0HAL<br>![ON0HAL](https://github.com/Guru-RF/SVXTRXRepeater/assets/1251767/7f9c5074-71b5-40aa-8375-b926f5b23b90)<br>
 ON0ORA<br>![ON0ORA](https://github.com/Guru-RF/SVXTRXRepeater/assets/1251767/10086ad7-3edd-46fc-9fe0-11c2d8879e82)<br>
+ON7FQ<br>![2023-09-30 08_25_03](https://github.com/Guru-RF/SVXTRXRepeater/assets/1251767/eabed06b-c7f1-4acc-a168-5d68c663fa6c)<br>
 
