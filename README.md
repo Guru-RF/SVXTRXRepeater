@@ -53,6 +53,14 @@ RMIC -> TX audio (Audio from the board to the repeater)
 RAF -> RX audio (Audio from the repeater to the board)
 ```
 
+### Custom Bypass Pins
+Description of the GPIO pins
+```text
+BPGND -> Bypass Ground
+BPNO -> Bypass Normaly Open
+BPNC -> Bypass Normaly Closed
+```
+
 ### New version !!! With Breackout board !!!
 Main PCB<br>
 ![2023-P-300](https://github.com/Guru-RF/SVXTRXRepeater/assets/1251767/348cf2b0-6107-4a90-9719-5b729cbd78da)<br>
