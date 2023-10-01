@@ -1,15 +1,15 @@
 # SVXLink install for the RF.Guru TRXrptr HAT ([TRXrptr](https://rf.guru/2023-k-300))
 
-HAT has been tested on a Raspberry Pi ZeroW and a Raspberry PI 4, should work on others to!
+HAT has been successfully trialed on both a Raspberry Pi ZeroW and a Raspberry Pi 4, and it is anticipated to be compatible with other models as well.
 
-The board has an audio card, an audio and ptt (optional) bypass<br>
-PTT is done via a tiny relay (NC and NO contacts are both available)<br>
-PTT bypass is also presented via a small relay relay (NC and NO contacts are both available)<br>
-COS detection is optional from 3v till 24v<br>
+The board includes an audio card and offers the option for audio and PTT bypass functionality.<br> 
+PTT operation is achieved using a compact relay with both NC and NO contacts available.<br>
+Additionally, PTT bypass functionality is also facilitated through a small relay with both NC and NO contacts accessible.<br>
+COS detection can be optionally configured within the voltage range of 3V to 24V.<br>
 
-Prepare your sd-card with Raspberry PI OS Lite ! ([Youtube](https://www.youtube.com/watch?v=vxmO_a5WNI8))
+To begin, make sure to prepare your SD card with the Raspberry Pi OS Lite as demonstrated in this ([YouTube](https://www.youtube.com/watch?v=vxmO_a5WNI8)) video.
 
-Login to your system with ssh add run following commands:
+Next, access your system through SSH and execute the following commands:
 
 ### Install GIT  ###
 ```console
