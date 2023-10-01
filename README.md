@@ -4,7 +4,7 @@ HAT has been successfully trialed on both a Raspberry Pi ZeroW and a Raspberry P
 
 The board includes an audio card and offers the option for audio and PTT bypass functionality.<br> 
 PTT operation is achieved using a compact relay with both NC and NO contacts available.<br>
-Additionally, PTT bypass functionality is also facilitated through a small relay with both NC and NO contacts accessible.<br>
+Additionally, PTT/COS-COR bypass functionality is also facilitated through a small relay with both NC and NO contacts accessible.<br>
 COS detection can be optionally configured within the voltage range of 3V to 24V.<br>
 
 To begin, make sure to prepare your SD card with the Raspberry Pi OS Lite as demonstrated in this ([YouTube](https://www.youtube.com/watch?v=vxmO_a5WNI8)) video.
