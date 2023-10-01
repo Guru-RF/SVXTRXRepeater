@@ -34,23 +34,22 @@ sudo bash install-svxlink.sh
 ```
 
 ### Simple Test ###
-Sending D1# dtmf on the configured frequency starts the parrot.
-
+Initiating the parrot function commences upon transmitting a D1# DTMF signal.
 
 ### GPIO Pins
 Description of the GPIO pins
 ```text
-GPIO 7 -> output ... Drive High for disabling the audio bypass (audio is in bypass by default)
-GPIO 8 -> output ... Optional PTT bypss (see breakout)
-GPIO 16 -> output ... Drive PTT (for any type of PTT (relay)
-GPIO 12 -> input ... COS ... depending on your tranceiver ... logic voltage can be between 3.3v and 24v
+GPIO 7: Configured as an output. Set it to a high signal to deactivate the audio bypass (the audio is in bypass mode by default).
+GPIO 8: Configured as an output. This pin is used for optional PTT bypass (refer to the breakout for details).
+GPIO 16: Configured as an output. Utilize this pin to activate PTT for any type of PTT operation, such as using a relay.
+GPIO 12: Configured as an input. This pin is used for COS (Carrier Operated Squelch) detection. Depending on your transceiver, the logic voltage can vary within the range of 3.3V to 24V.
 ```
 
 ### AUDIO Pins
-Description of the GPIO pins
+Description of the AUDIO pins
 ```text
-RMIC -> TX audio (Audio from the board to the repeater)
-RAF -> RX audio (Audio from the repeater to the board)
+RMIC corresponds to transmitting audio, which signifies audio going from the board to the repeater.
+RAF corresponds to receiving audio, indicating audio traveling from the repeater to the board.
 ```
 
 ### Custom Bypass Pins
