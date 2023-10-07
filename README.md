@@ -50,6 +50,15 @@ Description of the AUDIO pins
 ```text
 RMIC corresponds to transmitting audio, which signifies audio going from the board to the repeater.
 RAF corresponds to receiving audio, indicating audio traveling from the repeater to the board.
+GND this is common ground, also needed for the audio in and output
+```
+
+### PTT Pins
+Description of the GPIO pins
+```text
+PTTGND -> PTT Ground
+PTTNO -> PTT Normaly Open
+PTTNC -> PTT Normaly Closed
 ```
 
 ### Custom Bypass Pins
