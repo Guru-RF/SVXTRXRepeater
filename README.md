@@ -71,9 +71,10 @@ BPNC -> Bypass Normaly Closed
 
 ### New version !!! With Breackout board !!!
 Main PCB<br>
-![2023-P-300](https://github.com/Guru-RF/SVXTRXRepeater/assets/1251767/348cf2b0-6107-4a90-9719-5b729cbd78da)<br>
+![2023-P-300](https://github.com/Guru-RF/SVXTRXRepeater/assets/1251767/e0743816-b0c8-4d0a-b733-5f92b0fabddf)
+
 Breakout PCB<br>
-![2023-P-701](https://github.com/Guru-RF/SVXTRXRepeater/assets/1251767/f0934b06-4ec9-4cef-84e8-26a5313f08b8)<br>
+![2023-P-701](https://github.com/Guru-RF/SVXTRXRepeater/assets/1251767/e74a9b6c-e917-4b19-8878-a2fa0503e364)
 
 ### Picture's ###
 
