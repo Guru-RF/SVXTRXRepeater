@@ -14,7 +14,9 @@ say () {
 MYPATH=${PWD}
 
 say "Installing SVXLink Prerequisites"
-run "apt install build-essential g++ make cmake libsigc++-2.0-dev php8.0 libgsm1-dev libudev-dev libpopt-dev tcl-dev libgpiod-dev gpiod libgcrypt20-dev libspeex-dev libasound2-dev alsa-utils libjsoncpp-dev libopus-dev rtl-sdr libcurl4-openssl-dev libogg-dev librtlsdr-dev groff doxygen graphviz python3-serial toilet sox -y"
+run "apt install moreutils build-essential g++ make cmake libsigc++-2.0-dev php libgsm1-dev libudev-dev libpopt-dev tcl-dev libgpio
+d-dev gpiod libgcrypt20-dev libspeex-dev libasound2-dev alsa-utils libjsoncpp-dev libopus-dev rtl-sdr libcurl4-openssl-dev libogg-dev
+ librtlsdr-dev groff doxygen graphviz python3-serial toilet sox bc avahi-daemon avahi-utils -y"
 
 say "Disabling apache"
 run "systemctl disable apache2"
@@ -31,7 +33,7 @@ run "git clone https://github.com/sm0svx/svxlink.git"
 run "mkdir svxlink/src/build"
 run "cd svxlink/src/build/"
 run "cmake -DUSE_QT=OFF -DCMAKE_INSTALL_PREFIX=/usr -DSYSCONF_INSTALL_DIR=/etc \ -DLOCAL_STATE_DIR=/var -DWITH_SYSTEMD=ON  .."
-run "make -j 4"
+run "make -j4"
 run "make -j4 doc"
 run "make -j4 install"
 cd ${MYPATH}
@@ -75,7 +77,10 @@ run "systemctl enable svxlink"
 run "systemctl start svxlink_gpio_setup.service"
 run "systemctl start svxlink.service"
 
-say "Write Initial EEPROM settings to the radio module"
+say "Sysctl UDP tuning parameters"
+run "cp 97-rfguru.conf /etc/sysctl.d/97-rfguru.conf"
+
+say "Initial GPIO settings"
 run "/usr/sbin/repeater"
 
 say "Svxlink config is in here: /etc/svxlink/svxlink.conf.new" 
