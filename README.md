@@ -1,4 +1,4 @@
-# SVXLink install for the RF.Guru TRXrptr HAT ([TRXrptr](https://rf.guru/2023-k-300))
+### SVXLink install for the RF.Guru TRXrptr HAT ([TRXrptr](https://rf.guru/2023-k-300))
 
 # SVXLink Bookworm Image #
 
@@ -20,7 +20,7 @@ To complete the final configuration step, SSH is required. For Linux/Mac, SSH is
 
 Ensure that you download Putty for the correct architecture; for the majority, it will be x86 64-bit.
 
-### Manual Install ###
+# Manual Install #
 HAT has been successfully trialed on both a Raspberry Pi Zero 2 W and a Raspberry Pi 4, and it is anticipated to be compatible with other models as well.
 
 The board includes an audio card and offers the option for audio and PTT bypass functionality.<br> 
