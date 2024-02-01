@@ -1,6 +1,27 @@
 # SVXLink install for the RF.Guru TRXrptr HAT ([TRXrptr](https://rf.guru/2023-k-300))
 
-HAT has been successfully trialed on both a Raspberry Pi ZeroW and a Raspberry Pi 4, and it is anticipated to be compatible with other models as well.
+# SVXLink Bookworm Image #
+
+[Bookworm 64Bit Lite 2024-02-01 Image](https://storage.googleapis.com/rf-guru/rpi-images/trxrepeater-2024-02-01.img.gz)
+
+Utilize PI-Imager to write the image to your MicroSD card! **Don't use svxlink, root as a username, these are system usernames, using them will result in a broken installation !**
+
+Use the latest release of PI-Imager [Github](https://github.com/raspberrypi/rpi-imager/releases)
+
+[Youtube demonstration of how to use PI-Imager on Windows 11](https://www.youtube.com/watch?v=mOqekYMIBgU)
+
+[Youtube demonstration of how to use PI-Imager on MacOS X](https://www.youtube.com/watch?v=UeiBUUef2c0)
+
+It appears that the Raspberry Pi freezes after resizing the file system. Currently, after the initial boot, wait for 10 minutes, disconnect the power, and then restart. We suspect this issue is a bug and anticipate it will likely be resolved in a future release of pi-shrink.
+
+To complete the final configuration step, SSH is required. For Linux/Mac, SSH is installed by default. Open a terminal and type ssh username@ip. However, for Windows, you'll need an additional application, such as Putty.
+
+[Youtube how to install putty on Windows 11](https://www.youtube.com/watch?v=ljL4Wvv8XwI)
+
+Ensure that you download Putty for the correct architecture; for the majority, it will be x86 64-bit.
+
+### Manual Install ###
+HAT has been successfully trialed on both a Raspberry Pi Zero 2 W and a Raspberry Pi 4, and it is anticipated to be compatible with other models as well.
 
 The board includes an audio card and offers the option for audio and PTT bypass functionality.<br> 
 PTT operation is achieved using a compact relay with both NC and NO contacts available.<br>
