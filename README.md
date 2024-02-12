@@ -1,4 +1,4 @@
-### SVXLink install for the RF.Guru TRXrptr HAT ([TRXrptr](https://rf.guru/2023-k-300))
+### SVXLink install for the RF.Guru TRXrptr HAT ([TRXrptr](https://shop.rf.guru/products/2023-p-300))
 
 # SVXLink Bookworm Image #
 
