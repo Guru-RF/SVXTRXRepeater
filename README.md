@@ -69,8 +69,8 @@ GPIO 12: Configured as an input. This pin is used for COS (Carrier Operated Sque
 ### AUDIO Pins
 Description of the AUDIO pins
 ```text
-RMIC corresponds to transmitting audio, which signifies audio going from the board to the repeater.
-RAF corresponds to receiving audio, indicating audio traveling from the repeater to the board.
+AUDIOOUT/RMIC corresponds to transmitting audio, which signifies audio going from the board to the repeater.
+AUDIOIN/RAF corresponds to receiving audio, indicating audio traveling from the repeater to the board.
 GND this is common ground, also needed for the audio in and output
 ```
 
