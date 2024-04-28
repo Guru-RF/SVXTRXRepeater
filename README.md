@@ -93,7 +93,7 @@ BPNC -> Bypass Normaly Closed
 ### Modify volume
 Modify repeater_volume to your needs ...
 ```text
-/usr/sbin/repeater_volume
+vi /usr/sbin/repeater_volume
 ```
 You can use arecord to fine tune the audio in and output levels
 ```text
