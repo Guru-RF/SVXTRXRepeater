@@ -90,6 +90,18 @@ BPNO -> Bypass Normaly Open
 BPNC -> Bypass Normaly Closed
 ```
 
+### Modify volume
+Modify repeater_volume to your needs ...
+```text
+/usr/sbin/repeater_volume
+```
+You can use arecord to fine tune the audio in and output levels
+```text
+systemctl stop svxlink
+/sbin/hotspot_volume
+arecord -V stereo -r 44100 -f S16_LE -c 2 /dev/null
+```
+
 ### New version !!! With Breackout board !!!
 Main PCB<br>
 ![2023-P-300](https://github.com/Guru-RF/SVXTRXRepeater/assets/1251767/e0743816-b0c8-4d0a-b733-5f92b0fabddf)
