@@ -98,7 +98,7 @@ vi /usr/sbin/repeater_volume
 You can use arecord to fine tune the audio in and output levels
 ```text
 systemctl stop svxlink
-/sbin/hotspot_volume
+/sbin/repeater_volume
 arecord -V stereo -r 44100 -f S16_LE -c 2 /dev/null
 ```
 
