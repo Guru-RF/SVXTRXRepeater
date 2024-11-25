@@ -90,6 +90,46 @@ BPNO -> Bypass Normaly Open
 BPNC -> Bypass Normaly Closed
 ```
 
+### Breakout Board Overview
+![2023-BO-300](https://github.com/user-attachments/assets/ddde7382-64d6-4cfc-bee3-8821ad538268)
+
+The breakout board is self-explanatory. Below is a detailed explanation of its components and connections:
+
+#### **PTT Connections**
+- For most radios, you can wire **PTTGND** and **GND** together.
+- If you're using a sequencer or another method to drive the PTT, the **PTTGND**, **PTTNO**, and **PTTNC** terminals represent the output of a relay:
+  - **PTTNO**: Normally Open.
+  - **PTTNC**: Normally Closed.
+
+#### **Audio Connections**
+- **AUDIO IN**: Connect this to the audio output of your receiver or transceiver.
+- **AUDIO OUT**: Connect this to the audio input of your transmitter or transceiver.
+
+#### **Capacitors**
+- The capacitors on the board are used to remove bias on the audio channel. If your system has bias, remove the jumpers for the capacitors.
+
+#### **Audio Gain Adjustment**
+- If the audio gain (input/output) is too high and the DSP's volume management span is insufficient, you can remove the jumpers for the potentiometers and manually adjust the gain.
+
+#### **COS (Carrier Operated Switch)**
+- **COS Input**: Connect this to the COS output of your transceiver or receiver.
+- Jumper Settings:
+  - **3-30V**: Use this position for high-current triggers.
+  - **5V**: Use this position for low-current triggers (sufficient for most radios).
+  - If your COS output operates at a higher voltage, use the **3-30V** setting.
+
+#### **Power and Ground**
+- **+5V**: Supplies a 5V output from the Raspberry Pi.
+- **GND**: Connect to the system ground.
+
+#### **BPGND, BPNO, BPNC**
+- These terminals represent an open relay that you can configure as needed.
+  - Example Use: Route **COS** to **PTT Input** for standalone repeater functionality.
+- There is also an **audio bypass** function available (controlled via GPIO7 on the Raspberry Pi).
+
+---
+Feel free to reference this guide as you set up your breakout board. 
+
 ### Modify volume
 Modify repeater_volume to your needs ...
 ```text
