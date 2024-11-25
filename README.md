@@ -100,6 +100,7 @@ The breakout board is self-explanatory. Below is a detailed explanation of its c
 - If you're using a sequencer or another method to drive the PTT, the **PTTGND**, **PTTNO**, and **PTTNC** terminals represent the output of a relay:
   - **PTTNO**: Normally Open.
   - **PTTNC**: Normally Closed.
+  - driven by GPIO 16
 
 #### **Audio Connections**
 - **AUDIO IN**: Connect this to the audio output of your receiver or transceiver.
@@ -117,6 +118,7 @@ The breakout board is self-explanatory. Below is a detailed explanation of its c
   - **3-30V**: Use this position for high-current triggers.
   - **5V**: Use this position for low-current triggers (sufficient for most radios).
   - If your COS output operates at a higher voltage, use the **3-30V** setting.
+  - state can be aquired by reading GPIO 12
 
 #### **Power and Ground**
 - **+5V**: Supplies a 5V output from the Raspberry Pi.
@@ -125,7 +127,8 @@ The breakout board is self-explanatory. Below is a detailed explanation of its c
 #### **BPGND, BPNO, BPNC**
 - These terminals represent an open relay that you can configure as needed.
   - Example Use: Route **COS** to **PTT Input** for standalone repeater functionality.
-- There is also an **audio bypass** function available (controlled via GPIO7 on the Raspberry Pi).
+  - drive by GPIO 8
+- There is also an **audio bypass** function available (controlled via GPIO7 on the Raspberry Pi) in a false state audio is in passthrough.
 
 ---
 Feel free to reference this guide as you set up your breakout board. 
@@ -146,10 +149,7 @@ arecord -V stereo -r 44100 -f S16_LE -c 2 /dev/null
 Main PCB<br>
 ![2023-P-300](https://github.com/Guru-RF/SVXTRXRepeater/assets/1251767/e0743816-b0c8-4d0a-b733-5f92b0fabddf)
 
-Breakout PCB<br>
-![2023-P-701](https://github.com/Guru-RF/SVXTRXRepeater/assets/1251767/e74a9b6c-e917-4b19-8878-a2fa0503e364)
-
-### Picture's ###
+### Installation Picture's ###
 
 ON0AND<br>![ON0AND](https://github.com/Guru-RF/SVXTRXRepeater/assets/1251767/ae8500d2-dcf4-4cf3-8188-8b11269a3f90)<br>
 ON0HAL<br>![ON0HAL](https://github.com/Guru-RF/SVXTRXRepeater/assets/1251767/7f9c5074-71b5-40aa-8375-b926f5b23b90)<br>
