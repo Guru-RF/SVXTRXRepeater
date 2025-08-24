@@ -43,6 +43,12 @@ run "make install"
 say "Cleanup"
 run "cd /tmp && rm -fr svxlink"
 
+say "Updating svxlink.service and gpio_up"
+run "wget https://raw.githubusercontent.com/Guru-RF/SVXTRXRepeater/refs/heads/master/svxlink.service"
+run "wget https://raw.githubusercontent.com/Guru-RF/SVXTRXRepeater/refs/heads/master/svxlink_gpio_up"
+run "cat svxlink_gpio_up > /usr/sbin/svxlink_gpio_up"
+run "cp svxlink.service /lib/systemd/system/svxlink.service"
+
 say "Restart svxlink"
 say "Stop svxlink & apache"
 run "systemctl daemon-reload"
