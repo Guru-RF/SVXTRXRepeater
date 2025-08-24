@@ -49,6 +49,15 @@ run "wget https://raw.githubusercontent.com/Guru-RF/SVXTRXRepeater/refs/heads/ma
 run "cat svxlink_gpio_up > /usr/sbin/svxlink_gpio_up"
 run "cp svxlink.service /lib/systemd/system/svxlink.service"
 
+say "Holding raspberrypi-kernel raspberrypi-bootloader to current release!"
+run "apt-mark hold \
+  linux-image-rpi-v8 linux-headers-rpi-v8 \
+  linux-image-rpi-2712 linux-headers-rpi-2712 \
+  linux-libc-dev linux-kbuild-* \
+  raspi-firmware rpi-eeprom \
+  raspberrypi-kernel raspberrypi-bootloader"
+run "apt-mark showhold"
+
 say "Restart svxlink"
 say "Stop svxlink & apache"
 run "systemctl daemon-reload"
